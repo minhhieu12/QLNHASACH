@@ -53,7 +53,7 @@
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(75, 43);
             this.simpleButton1.TabIndex = 8;
-            this.simpleButton1.Text = "Login";
+            this.simpleButton1.Text = "Apply";
             // 
             // textBox2
             // 
