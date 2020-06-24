@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.btnthoat = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
@@ -46,12 +46,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User:";
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtUserName.Location = new System.Drawing.Point(95, 16);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(100, 20);
+            this.txtUserName.TabIndex = 1;
             // 
             // label2
             // 
@@ -62,25 +62,26 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Password:";
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtPassword.Location = new System.Drawing.Point(95, 55);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.TabIndex = 1;
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnDangNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.ImageOptions.Image")));
             this.btnDangNhap.Location = new System.Drawing.Point(27, 93);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(75, 43);
             this.btnDangNhap.TabIndex = 2;
             this.btnDangNhap.Text = "Login";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnthoat
             // 
-            this.btnthoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnthoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.ImageOptions.Image")));
             this.btnthoat.Location = new System.Drawing.Point(120, 93);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(75, 43);
@@ -94,9 +95,9 @@
             this.ClientSize = new System.Drawing.Size(214, 147);
             this.Controls.Add(this.btnthoat);
             this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
@@ -108,9 +109,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnthoat;
     }

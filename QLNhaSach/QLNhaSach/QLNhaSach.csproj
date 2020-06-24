@@ -65,11 +65,38 @@
     <Compile Include="Class\XLBANG.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Class\XLCHAMCONG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLCTHD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLDONHANG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLKHACHHANG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLLOAISP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLLOAITK.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLNHANVIEN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLNSX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\XLSANPHAM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -79,8 +106,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="ChangePassword.resx">
