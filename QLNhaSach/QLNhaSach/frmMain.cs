@@ -22,14 +22,13 @@ namespace QLNhaSach
         private void frmMain_Load(object sender, EventArgs e)
         {
             enableControl(-1);
-            Login f = new Login();
-            f.MdiParent = this;
+            Login f = new Login(this);
             f.StartPosition = FormStartPosition.CenterScreen;
-            f.Show();
             f.WindowState = FormWindowState.Normal;
+            f.ShowDialog();
         }
 
-        private void enableControl(int maLTK)
+        public void enableControl(int maLTK)
         {
             switch (maLTK)
             {
@@ -95,19 +94,29 @@ namespace QLNhaSach
 
         private void btnDoiMK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (fDoiMatKhau == null)
+            int index = tabControlMain.TabPages.IndexOfKey("tabPageDoiMatKhau");
+            if(index >= 0)
             {
-                fDoiMatKhau = new ChangePassword();
-                fDoiMatKhau.MdiParent = this;
-                fDoiMatKhau.WindowState = FormWindowState.Maximized;
-                fDoiMatKhau.Show();
+                tabControlMain.SelectedIndex = index;
             }
-
             else
             {
-                fDoiMatKhau.Activate();
-                fDoiMatKhau.Show();
+                ChangePassword f = new ChangePassword();
+                TabPage p = new TabPage(f.Text);
+                p.Name = "tabPageDoiMatKhau";
+                f.TopLevel = false;
+                p.Controls.Add(f);
+                f.Dock = DockStyle.Fill;
+                f.FormBorderStyle = FormBorderStyle.None;
+                tabControlMain.TabPages.Add(p);
+                f.Show();
             }
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tabControlMain.TabPages.Clear();
+            frmMain_Load(sender, e);
         }
     }
 }

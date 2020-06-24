@@ -87,6 +87,7 @@
             this.btnthoat.Size = new System.Drawing.Size(75, 43);
             this.btnthoat.TabIndex = 2;
             this.btnthoat.Text = "Exit";
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // Login
             // 
@@ -101,6 +102,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

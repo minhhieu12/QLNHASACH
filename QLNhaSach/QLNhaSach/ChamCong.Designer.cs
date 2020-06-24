@@ -36,7 +36,6 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.qLNHASACHDataSet = new QLNhaSach.QLNHASACHDataSet();
@@ -47,6 +46,7 @@
             this.SoGio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Xoa = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.listNhanVien = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,7 +56,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listView1);
+            this.groupBox1.Controls.Add(this.listNhanVien);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -122,14 +122,6 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Tính lương";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(445, 52);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(319, 116);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label3
             // 
@@ -211,6 +203,14 @@
             this.Xoa.Text = "Xoá";
             this.Xoa.UseColumnTextForButtonValue = true;
             // 
+            // listNhanVien
+            // 
+            this.listNhanVien.FormattingEnabled = true;
+            this.listNhanVien.Location = new System.Drawing.Point(445, 52);
+            this.listNhanVien.Name = "listNhanVien";
+            this.listNhanVien.Size = new System.Drawing.Size(329, 121);
+            this.listNhanVien.TabIndex = 4;
+            // 
             // ChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,7 +236,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -250,5 +249,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoGio;
         private System.Windows.Forms.DataGridViewButtonColumn Sua;
         private System.Windows.Forms.DataGridViewButtonColumn Xoa;
+        private System.Windows.Forms.ListBox listNhanVien;
     }
 }
