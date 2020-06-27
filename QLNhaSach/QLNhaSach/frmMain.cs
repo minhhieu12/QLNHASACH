@@ -85,11 +85,23 @@ namespace QLNhaSach
 
         private void btnChamCong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            foreach (Form f in this.MdiChildren)
+            int index = tabControlMain.TabPages.IndexOfKey("tabPageChamCong");
+            if(index >= 0)
             {
-                f.Close();
+                tabControlMain.SelectedIndex = index;
             }
-            frmMain_Load(sender, e);
+            else
+            {
+                ChamCong chc = new ChamCong();
+                TabPage pg = new TabPage(chc.Text);
+                pg.Name = "tabPageChamCong";
+                chc.TopLevel = false;
+                pg.Controls.Add(chc);
+                chc.Dock = DockStyle.Fill;
+                chc.FormBorderStyle = FormBorderStyle.None;
+                tabControlMain.TabPages.Add(pg);
+                chc.Show();
+            }
         }
 
         private void btnDoiMK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -49,12 +49,9 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-<<<<<<< HEAD
             this.tabControlMain = new System.Windows.Forms.TabControl();
-=======
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
->>>>>>> 7a2ba7ac26f82b4dd1ed027b23c22cc94c113b65
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -278,12 +275,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-<<<<<<< HEAD
         private System.Windows.Forms.TabControl tabControlMain;
-=======
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
->>>>>>> 7a2ba7ac26f82b4dd1ed027b23c22cc94c113b65
     }
 }
 
